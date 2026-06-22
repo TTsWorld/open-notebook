@@ -1,0 +1,4624 @@
+{
+  "name": "open-notebook",
+  "description": "Open Notebook 是一个开源、隐私优先的研究助手，灵感来自 Google Notebook LM，支持多模型提供商、多模态内容组织、智能检索、上下文聊天和播客生成。 Note: this project has over 100 source files; consider scoping analysis to a subdirectory for faster results.",
+  "languages": [
+    "conf",
+    "config",
+    "css",
+    "dockerfile",
+    "javascript",
+    "jinja",
+    "json",
+    "makefile",
+    "markdown",
+    "python",
+    "shell",
+    "surrealql",
+    "toml",
+    "txt",
+    "typescript",
+    "unknown",
+    "yaml"
+  ],
+  "frameworks": [
+    "Docker",
+    "Docker Compose",
+    "FastAPI",
+    "LangChain",
+    "LangGraph",
+    "Next.js",
+    "Pydantic",
+    "React",
+    "Tailwind CSS",
+    "Uvicorn",
+    "Vitest",
+    "Zustand"
+  ],
+  "files": [
+    {
+      "path": ".dockerignore",
+      "language": "unknown",
+      "sizeLines": 51,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".env.example",
+      "language": "config",
+      "sizeLines": 62,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".gitattributes",
+      "language": "unknown",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "language": "yaml",
+      "sizeLines": 104,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "language": "yaml",
+      "sizeLines": 11,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "language": "yaml",
+      "sizeLines": 65,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/installation_issue.yml",
+      "language": "yaml",
+      "sizeLines": 148,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "language": "markdown",
+      "sizeLines": 107,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".github/workflows/build-and-release.yml",
+      "language": "yaml",
+      "sizeLines": 297,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/build-dev.yml",
+      "language": "yaml",
+      "sizeLines": 273,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "language": "yaml",
+      "sizeLines": 59,
+      "fileCategory": "infra"
+    },
+    {
+      "path": ".python-version",
+      "language": "unknown",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/config.json",
+      "language": "json",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".worktreeinclude",
+      "language": "unknown",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/auth.py",
+      "language": "python",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/chat_service.py",
+      "language": "python",
+      "sizeLines": 168,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 260,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "api/client.py",
+      "language": "python",
+      "sizeLines": 529,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/command_service.py",
+      "language": "python",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/context_service.py",
+      "language": "python",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/credentials_service.py",
+      "language": "python",
+      "sizeLines": 915,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/embedding_service.py",
+      "language": "python",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/episode_profiles_service.py",
+      "language": "python",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/insights_service.py",
+      "language": "python",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/main.py",
+      "language": "python",
+      "sizeLines": 322,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/models_service.py",
+      "language": "python",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/models.py",
+      "language": "python",
+      "sizeLines": 693,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/notebook_service.py",
+      "language": "python",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/notes_service.py",
+      "language": "python",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/podcast_api_service.py",
+      "language": "python",
+      "sizeLines": 125,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/podcast_service.py",
+      "language": "python",
+      "sizeLines": 206,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/auth.py",
+      "language": "python",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/chat.py",
+      "language": "python",
+      "sizeLines": 526,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/commands.py",
+      "language": "python",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/config.py",
+      "language": "python",
+      "sizeLines": 160,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/context.py",
+      "language": "python",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/credentials.py",
+      "language": "python",
+      "sizeLines": 435,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/embedding_rebuild.py",
+      "language": "python",
+      "sizeLines": 192,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/embedding.py",
+      "language": "python",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/episode_profiles.py",
+      "language": "python",
+      "sizeLines": 216,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/insights.py",
+      "language": "python",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/languages.py",
+      "language": "python",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/models.py",
+      "language": "python",
+      "sizeLines": 780,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/notebooks.py",
+      "language": "python",
+      "sizeLines": 350,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/notes.py",
+      "language": "python",
+      "sizeLines": 190,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/podcasts.py",
+      "language": "python",
+      "sizeLines": 299,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/search.py",
+      "language": "python",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/settings.py",
+      "language": "python",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/source_chat.py",
+      "language": "python",
+      "sizeLines": 554,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/sources.py",
+      "language": "python",
+      "sizeLines": 1053,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/speaker_profiles.py",
+      "language": "python",
+      "sizeLines": 186,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/transformations.py",
+      "language": "python",
+      "sizeLines": 252,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/search_service.py",
+      "language": "python",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/settings_service.py",
+      "language": "python",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/sources_service.py",
+      "language": "python",
+      "sizeLines": 324,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/transformations_service.py",
+      "language": "python",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 420,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 218,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "language": "markdown",
+      "sizeLines": 134,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "commands/__init__.py",
+      "language": "python",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "commands/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 69,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "commands/embedding_commands.py",
+      "language": "python",
+      "sizeLines": 1063,
+      "fileCategory": "code"
+    },
+    {
+      "path": "commands/example_commands.py",
+      "language": "python",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "commands/podcast_commands.py",
+      "language": "python",
+      "sizeLines": 300,
+      "fileCategory": "code"
+    },
+    {
+      "path": "commands/source_commands.py",
+      "language": "python",
+      "sizeLines": 269,
+      "fileCategory": "code"
+    },
+    {
+      "path": "CONFIGURATION.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "dev-init.sh",
+      "language": "shell",
+      "sizeLines": 43,
+      "fileCategory": "script"
+    },
+    {
+      "path": "docker-compose.yml",
+      "language": "yaml",
+      "sizeLines": 42,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "Dockerfile",
+      "language": "dockerfile",
+      "sizeLines": 135,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "Dockerfile.single",
+      "language": "dockerfile",
+      "sizeLines": 106,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "docs/0-START-HERE/index.md",
+      "language": "markdown",
+      "sizeLines": 65,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/0-START-HERE/quick-start-cloud.md",
+      "language": "markdown",
+      "sizeLines": 212,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/0-START-HERE/quick-start-external-ollama.md",
+      "language": "markdown",
+      "sizeLines": 212,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/0-START-HERE/quick-start-local.md",
+      "language": "markdown",
+      "sizeLines": 306,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/0-START-HERE/quick-start-openai.md",
+      "language": "markdown",
+      "sizeLines": 195,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/1-INSTALLATION/docker-compose.md",
+      "language": "markdown",
+      "sizeLines": 359,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "docs/1-INSTALLATION/from-source.md",
+      "language": "markdown",
+      "sizeLines": 195,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/1-INSTALLATION/index.md",
+      "language": "markdown",
+      "sizeLines": 159,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/1-INSTALLATION/single-container.md",
+      "language": "markdown",
+      "sizeLines": 146,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/1-INSTALLATION/windows-native.md",
+      "language": "markdown",
+      "sizeLines": 285,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/2-CORE-CONCEPTS/ai-context-rag.md",
+      "language": "markdown",
+      "sizeLines": 450,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/2-CORE-CONCEPTS/chat-vs-transformations.md",
+      "language": "markdown",
+      "sizeLines": 353,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/2-CORE-CONCEPTS/index.md",
+      "language": "markdown",
+      "sizeLines": 70,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/2-CORE-CONCEPTS/notebooks-sources-notes.md",
+      "language": "markdown",
+      "sizeLines": 284,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/2-CORE-CONCEPTS/podcasts-explained.md",
+      "language": "markdown",
+      "sizeLines": 426,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/3-USER-GUIDE/adding-sources.md",
+      "language": "markdown",
+      "sizeLines": 429,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/3-USER-GUIDE/api-configuration.md",
+      "language": "markdown",
+      "sizeLines": 386,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/3-USER-GUIDE/chat-effectively.md",
+      "language": "markdown",
+      "sizeLines": 554,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/3-USER-GUIDE/citations.md",
+      "language": "markdown",
+      "sizeLines": 299,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/3-USER-GUIDE/creating-podcasts.md",
+      "language": "markdown",
+      "sizeLines": 678,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/3-USER-GUIDE/index.md",
+      "language": "markdown",
+      "sizeLines": 208,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/3-USER-GUIDE/interface-overview.md",
+      "language": "markdown",
+      "sizeLines": 377,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/3-USER-GUIDE/search.md",
+      "language": "markdown",
+      "sizeLines": 475,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/3-USER-GUIDE/transformations.md",
+      "language": "markdown",
+      "sizeLines": 402,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/3-USER-GUIDE/working-with-notes.md",
+      "language": "markdown",
+      "sizeLines": 581,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/4-AI-PROVIDERS/index.md",
+      "language": "markdown",
+      "sizeLines": 219,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/advanced.md",
+      "language": "markdown",
+      "sizeLines": 544,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/ai-providers.md",
+      "language": "markdown",
+      "sizeLines": 548,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/database.md",
+      "language": "markdown",
+      "sizeLines": 50,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/environment-reference.md",
+      "language": "markdown",
+      "sizeLines": 305,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/index.md",
+      "language": "markdown",
+      "sizeLines": 328,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/local-stt.md",
+      "language": "markdown",
+      "sizeLines": 365,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/local-tts.md",
+      "language": "markdown",
+      "sizeLines": 344,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/mcp-integration.md",
+      "language": "markdown",
+      "sizeLines": 199,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/ollama.md",
+      "language": "markdown",
+      "sizeLines": 743,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/openai-compatible.md",
+      "language": "markdown",
+      "sizeLines": 402,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/reverse-proxy.md",
+      "language": "markdown",
+      "sizeLines": 901,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/security.md",
+      "language": "markdown",
+      "sizeLines": 422,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/6-TROUBLESHOOTING/ai-chat-issues.md",
+      "language": "markdown",
+      "sizeLines": 444,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/6-TROUBLESHOOTING/connection-issues.md",
+      "language": "markdown",
+      "sizeLines": 447,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/6-TROUBLESHOOTING/faq.md",
+      "language": "markdown",
+      "sizeLines": 258,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/6-TROUBLESHOOTING/index.md",
+      "language": "markdown",
+      "sizeLines": 240,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/6-TROUBLESHOOTING/quick-fixes.md",
+      "language": "markdown",
+      "sizeLines": 372,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/7-DEVELOPMENT/api-reference.md",
+      "language": "markdown",
+      "sizeLines": 223,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/7-DEVELOPMENT/architecture.md",
+      "language": "markdown",
+      "sizeLines": 891,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/7-DEVELOPMENT/change-playbooks.md",
+      "language": "markdown",
+      "sizeLines": 198,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/7-DEVELOPMENT/code-standards.md",
+      "language": "markdown",
+      "sizeLines": 375,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/7-DEVELOPMENT/contributing.md",
+      "language": "markdown",
+      "sizeLines": 201,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/7-DEVELOPMENT/design-principles.md",
+      "language": "markdown",
+      "sizeLines": 351,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/7-DEVELOPMENT/development-setup.md",
+      "language": "markdown",
+      "sizeLines": 416,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/7-DEVELOPMENT/index.md",
+      "language": "markdown",
+      "sizeLines": 106,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/7-DEVELOPMENT/maintainer-guide.md",
+      "language": "markdown",
+      "sizeLines": 408,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/7-DEVELOPMENT/quick-start.md",
+      "language": "markdown",
+      "sizeLines": 128,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/7-DEVELOPMENT/security.md",
+      "language": "markdown",
+      "sizeLines": 193,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/7-DEVELOPMENT/testing.md",
+      "language": "markdown",
+      "sizeLines": 423,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/index.md",
+      "language": "markdown",
+      "sizeLines": 289,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/SECURITY_REVIEW.md",
+      "language": "markdown",
+      "sizeLines": 96,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "examples/docker-compose-dev.yml",
+      "language": "yaml",
+      "sizeLines": 28,
+      "fileCategory": "config"
+    },
+    {
+      "path": "examples/docker-compose-full-local.yml",
+      "language": "yaml",
+      "sizeLines": 197,
+      "fileCategory": "config"
+    },
+    {
+      "path": "examples/docker-compose-ollama.yml",
+      "language": "yaml",
+      "sizeLines": 63,
+      "fileCategory": "config"
+    },
+    {
+      "path": "examples/docker-compose-single.yml",
+      "language": "yaml",
+      "sizeLines": 22,
+      "fileCategory": "config"
+    },
+    {
+      "path": "examples/docker-compose-speaches.yml",
+      "language": "yaml",
+      "sizeLines": 125,
+      "fileCategory": "config"
+    },
+    {
+      "path": "examples/easypanel/index.ts",
+      "language": "typescript",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "examples/easypanel/meta.yaml",
+      "language": "yaml",
+      "sizeLines": 79,
+      "fileCategory": "config"
+    },
+    {
+      "path": "examples/easypanel/README.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "examples/README.md",
+      "language": "markdown",
+      "sizeLines": 167,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "frontend/components.json",
+      "language": "json",
+      "sizeLines": 20,
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/eslint.config.mjs",
+      "language": "javascript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/next.config.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/package.json",
+      "language": "json",
+      "sizeLines": 79,
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/postcss.config.mjs",
+      "language": "javascript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(auth)/login/page.tsx",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/advanced/components/RebuildEmbeddings.tsx",
+      "language": "typescript",
+      "sizeLines": 341,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/advanced/components/SystemInfo.tsx",
+      "language": "typescript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/advanced/page.tsx",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/layout.tsx",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx",
+      "language": "typescript",
+      "sizeLines": 277,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/ChatColumn.test.tsx",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/ChatColumn.tsx",
+      "language": "typescript",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/NotebookCard.tsx",
+      "language": "typescript",
+      "sizeLines": 137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/NotebookDeleteDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 176,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/NotebookHeader.tsx",
+      "language": "typescript",
+      "sizeLines": 127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/NotebookList.tsx",
+      "language": "typescript",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/NotebookRow.tsx",
+      "language": "typescript",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/NoteEditorDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 197,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/NotesColumn.tsx",
+      "language": "typescript",
+      "sizeLines": 246,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/SourcesColumn.tsx",
+      "language": "typescript",
+      "sizeLines": 288,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/page.tsx",
+      "language": "typescript",
+      "sizeLines": 135,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/page.tsx",
+      "language": "typescript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/podcasts/page.tsx",
+      "language": "typescript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/search/page.tsx",
+      "language": "typescript",
+      "sizeLines": 500,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/settings/api-keys/page.tsx",
+      "language": "typescript",
+      "sizeLines": 1450,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/settings/components/SettingsForm.tsx",
+      "language": "typescript",
+      "sizeLines": 278,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/settings/page.tsx",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/sources/[id]/page.tsx",
+      "language": "typescript",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/sources/page.tsx",
+      "language": "typescript",
+      "sizeLines": 432,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/transformations/components/DefaultPromptEditor.tsx",
+      "language": "typescript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/transformations/components/TransformationCard.tsx",
+      "language": "typescript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/transformations/components/TransformationEditorDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 255,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/transformations/components/TransformationPlayground.tsx",
+      "language": "typescript",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/transformations/components/TransformationsList.tsx",
+      "language": "typescript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/transformations/page.tsx",
+      "language": "typescript",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/api/_sse-proxy.ts",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/api/search/ask/route.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/api/sources/[sourceId]/chat/sessions/[sessionId]/messages/route.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/config/route.ts",
+      "language": "typescript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/globals.css",
+      "language": "css",
+      "sizeLines": 192,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "frontend/src/app/layout.tsx",
+      "language": "typescript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/page.tsx",
+      "language": "typescript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 168,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "frontend/src/components/auth/LoginForm.tsx",
+      "language": "typescript",
+      "sizeLines": 186,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/CommandPalette.tsx",
+      "language": "typescript",
+      "sizeLines": 293,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/ConfirmDialog.test.tsx",
+      "language": "typescript",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/ConfirmDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/ConnectionGuard.tsx",
+      "language": "typescript",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/ContextIndicator.tsx",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/ContextToggle.tsx",
+      "language": "typescript",
+      "sizeLines": 96,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/EmptyState.tsx",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/ErrorBoundary.tsx",
+      "language": "typescript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/InlineEdit.tsx",
+      "language": "typescript",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/LanguageLoadingOverlay.tsx",
+      "language": "typescript",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/LanguageToggle.tsx",
+      "language": "typescript",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/LoadingSpinner.tsx",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/ModelSelector.tsx",
+      "language": "typescript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/ThemeToggle.tsx",
+      "language": "typescript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/errors/ConnectionErrorOverlay.tsx",
+      "language": "typescript",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/layout/AppShell.tsx",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/layout/AppSidebar.test.tsx",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/layout/AppSidebar.tsx",
+      "language": "typescript",
+      "sizeLines": 381,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/layout/SetupBanner.tsx",
+      "language": "typescript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/notebooks/CollapsibleColumn.tsx",
+      "language": "typescript",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/notebooks/CreateNotebookDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/EpisodeCard.tsx",
+      "language": "typescript",
+      "sizeLines": 435,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/EpisodeProfilesPanel.tsx",
+      "language": "typescript",
+      "sizeLines": 293,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/EpisodesTab.tsx",
+      "language": "typescript",
+      "sizeLines": 182,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/forms/EpisodeProfileFormDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 362,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/forms/SpeakerProfileFormDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 359,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/GeneratePodcastDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 983,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/SpeakerProfilesPanel.tsx",
+      "language": "typescript",
+      "sizeLines": 264,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/TemplatesTab.tsx",
+      "language": "typescript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/providers/I18nProvider.tsx",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/providers/ModalProvider.tsx",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/providers/QueryProvider.tsx",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/providers/ThemeProvider.tsx",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/search/AdvancedModelsDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/search/SaveToNotebooksDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 123,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/search/StreamingResponse.tsx",
+      "language": "typescript",
+      "sizeLines": 200,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/settings/EmbeddingModelChangeDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/settings/index.ts",
+      "language": "typescript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/settings/MigrationBanner.tsx",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/settings/ModelTestResultDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/ChatPanel.tsx",
+      "language": "typescript",
+      "sizeLines": 377,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/MessageActions.tsx",
+      "language": "typescript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/ModelSelector.tsx",
+      "language": "typescript",
+      "sizeLines": 172,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/NotebookAssociations.tsx",
+      "language": "typescript",
+      "sizeLines": 229,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/SessionManager.tsx",
+      "language": "typescript",
+      "sizeLines": 269,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/SourceDetailContent.tsx",
+      "language": "typescript",
+      "sizeLines": 863,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/SourceDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/SourceInsightDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/sources/AddExistingSourceDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 307,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/sources/AddSourceButton.tsx",
+      "language": "typescript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/sources/AddSourceDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 634,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/sources/index.ts",
+      "language": "typescript",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/sources/README.md",
+      "language": "markdown",
+      "sizeLines": 143,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "frontend/src/components/sources/SourceCard.tsx",
+      "language": "typescript",
+      "sizeLines": 473,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/sources/steps/NotebooksStep.tsx",
+      "language": "typescript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/sources/steps/ProcessingStep.tsx",
+      "language": "typescript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/sources/steps/SourceTypeStep.tsx",
+      "language": "typescript",
+      "sizeLines": 356,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/accordion.tsx",
+      "language": "typescript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/alert-dialog.tsx",
+      "language": "typescript",
+      "sizeLines": 157,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/alert.tsx",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/badge.tsx",
+      "language": "typescript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/button.tsx",
+      "language": "typescript",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/card.tsx",
+      "language": "typescript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/checkbox-list.tsx",
+      "language": "typescript",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/checkbox.tsx",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "frontend/src/components/ui/collapsible.tsx",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/command.tsx",
+      "language": "typescript",
+      "sizeLines": 184,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/dialog.tsx",
+      "language": "typescript",
+      "sizeLines": 143,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/dropdown-menu.tsx",
+      "language": "typescript",
+      "sizeLines": 257,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/form-section.tsx",
+      "language": "typescript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/input.tsx",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/label.tsx",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/markdown-editor.tsx",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/popover.tsx",
+      "language": "typescript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/progress.tsx",
+      "language": "typescript",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/radio-group.tsx",
+      "language": "typescript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/scroll-area.tsx",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/select.tsx",
+      "language": "typescript",
+      "sizeLines": 185,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/separator.tsx",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/sonner.tsx",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/tabs.tsx",
+      "language": "typescript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/textarea.tsx",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/tooltip.tsx",
+      "language": "typescript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/wizard-container.tsx",
+      "language": "typescript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/chat.ts",
+      "language": "typescript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 158,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "frontend/src/lib/api/client.ts",
+      "language": "typescript",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/credentials.ts",
+      "language": "typescript",
+      "sizeLines": 243,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/embedding.ts",
+      "language": "typescript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/insights.ts",
+      "language": "typescript",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/models.ts",
+      "language": "typescript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/notebooks.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/notes.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/podcasts.ts",
+      "language": "typescript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/query-client.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/search.ts",
+      "language": "typescript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/settings.ts",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/source-chat.ts",
+      "language": "typescript",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/sources.ts",
+      "language": "typescript",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/api/transformations.ts",
+      "language": "typescript",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/config.test.ts",
+      "language": "typescript",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/config.ts",
+      "language": "typescript",
+      "sizeLines": 148,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 192,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-ask.ts",
+      "language": "typescript",
+      "sizeLines": 171,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-auth.ts",
+      "language": "typescript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-create-dialogs.tsx",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-credentials.ts",
+      "language": "typescript",
+      "sizeLines": 388,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-insights.ts",
+      "language": "typescript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-media-query.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-modal-manager.test.ts",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-modal-manager.ts",
+      "language": "typescript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-models.ts",
+      "language": "typescript",
+      "sizeLines": 199,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-navigation.ts",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-notebooks.ts",
+      "language": "typescript",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-notes.ts",
+      "language": "typescript",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-podcasts.ts",
+      "language": "typescript",
+      "sizeLines": 413,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-search.ts",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-settings.ts",
+      "language": "typescript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-sources.ts",
+      "language": "typescript",
+      "sizeLines": 386,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-toast.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-transformations.ts",
+      "language": "typescript",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-translation.test.ts",
+      "language": "typescript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-translation.ts",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-version-check.ts",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/useNotebookChat.ts",
+      "language": "typescript",
+      "sizeLines": 323,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/useSourceChat.ts",
+      "language": "typescript",
+      "sizeLines": 255,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/i18n-events.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/i18n.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/bn-IN/index.ts",
+      "language": "typescript",
+      "sizeLines": 945,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/ca-ES/index.ts",
+      "language": "typescript",
+      "sizeLines": 944,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 154,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "frontend/src/lib/locales/de-DE/index.ts",
+      "language": "typescript",
+      "sizeLines": 947,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/en-US/index.ts",
+      "language": "typescript",
+      "sizeLines": 945,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/es-ES/index.ts",
+      "language": "typescript",
+      "sizeLines": 945,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/fr-FR/index.ts",
+      "language": "typescript",
+      "sizeLines": 944,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/index.test.ts",
+      "language": "typescript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/index.ts",
+      "language": "typescript",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/it-IT/index.ts",
+      "language": "typescript",
+      "sizeLines": 944,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/ja-JP/index.ts",
+      "language": "typescript",
+      "sizeLines": 944,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/pl-PL/index.ts",
+      "language": "typescript",
+      "sizeLines": 944,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/pt-BR/index.ts",
+      "language": "typescript",
+      "sizeLines": 944,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/ru-RU/index.ts",
+      "language": "typescript",
+      "sizeLines": 944,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/tr-TR/index.ts",
+      "language": "typescript",
+      "sizeLines": 944,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/zh-CN/index.ts",
+      "language": "typescript",
+      "sizeLines": 944,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/zh-TW/index.ts",
+      "language": "typescript",
+      "sizeLines": 944,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/stores/auth-store.ts",
+      "language": "typescript",
+      "sizeLines": 221,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/stores/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 68,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "frontend/src/lib/stores/navigation-store.ts",
+      "language": "typescript",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/stores/notebook-columns-store.ts",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/stores/notebook-view-store.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/stores/sidebar-store.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/stores/theme-store.ts",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/theme-script.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/types/api.ts",
+      "language": "typescript",
+      "sizeLines": 241,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/types/auth.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/types/common.ts",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/types/config.ts",
+      "language": "typescript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/types/models.ts",
+      "language": "typescript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/types/notebook-context.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/types/podcasts.ts",
+      "language": "typescript",
+      "sizeLines": 156,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/types/search.ts",
+      "language": "typescript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/types/transformations.ts",
+      "language": "typescript",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/utils.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/utils/date-locale.ts",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/utils/error-handler.ts",
+      "language": "typescript",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/utils/source-context.test.ts",
+      "language": "typescript",
+      "sizeLines": 152,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/utils/source-context.ts",
+      "language": "typescript",
+      "sizeLines": 137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/utils/source-references.tsx",
+      "language": "typescript",
+      "sizeLines": 495,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/proxy.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/test/jest-dom.d.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/test/setup.ts",
+      "language": "typescript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/start-server.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/tailwind.config.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/test-results/.last-run.json",
+      "language": "json",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "language": "json",
+      "sizeLines": 42,
+      "fileCategory": "config"
+    },
+    {
+      "path": "frontend/vitest.config.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "history.txt",
+      "language": "txt",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "MAINTAINER_GUIDE.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Makefile",
+      "language": "makefile",
+      "sizeLines": 209,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "mypy.ini",
+      "language": "config",
+      "sizeLines": 36,
+      "fileCategory": "config"
+    },
+    {
+      "path": "open_notebook/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/ai/__init__.py",
+      "language": "python",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/ai/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 331,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "open_notebook/ai/connection_tester.py",
+      "language": "python",
+      "sizeLines": 329,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/ai/key_provider.py",
+      "language": "python",
+      "sizeLines": 307,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/ai/model_discovery.py",
+      "language": "python",
+      "sizeLines": 888,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/ai/models.py",
+      "language": "python",
+      "sizeLines": 267,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/ai/provision.py",
+      "language": "python",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 225,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "open_notebook/config.py",
+      "language": "python",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/async_migrate.py",
+      "language": "python",
+      "sizeLines": 244,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 124,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "open_notebook/database/migrate.py",
+      "language": "python",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/1_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/1.surrealql",
+      "language": "surrealql",
+      "sizeLines": 178,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/10_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/10.surrealql",
+      "language": "surrealql",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/11_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/11.surrealql",
+      "language": "surrealql",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/12_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/12.surrealql",
+      "language": "surrealql",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/13_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/13.surrealql",
+      "language": "surrealql",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/14_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/14.surrealql",
+      "language": "surrealql",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/15_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/15.surrealql",
+      "language": "surrealql",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/2_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/2.surrealql",
+      "language": "surrealql",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/3_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/3.surrealql",
+      "language": "surrealql",
+      "sizeLines": 145,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/4_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 139,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/4.surrealql",
+      "language": "surrealql",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/5_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/5.surrealql",
+      "language": "surrealql",
+      "sizeLines": 169,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/6_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/6.surrealql",
+      "language": "surrealql",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/7_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/7.surrealql",
+      "language": "surrealql",
+      "sizeLines": 152,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/8_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/8.surrealql",
+      "language": "surrealql",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/9_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/9.surrealql",
+      "language": "surrealql",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/repository.py",
+      "language": "python",
+      "sizeLines": 194,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/domain/__init__.py",
+      "language": "python",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/domain/base.py",
+      "language": "python",
+      "sizeLines": 361,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/domain/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 122,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "open_notebook/domain/content_settings.py",
+      "language": "python",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/domain/credential.py",
+      "language": "python",
+      "sizeLines": 286,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/domain/notebook.py",
+      "language": "python",
+      "sizeLines": 768,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/domain/provider_config.py",
+      "language": "python",
+      "sizeLines": 444,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/domain/transformation.py",
+      "language": "python",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/exceptions.py",
+      "language": "python",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/graphs/ask.py",
+      "language": "python",
+      "sizeLines": 155,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/graphs/chat.py",
+      "language": "python",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/graphs/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 79,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "open_notebook/graphs/prompt.py",
+      "language": "python",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/graphs/source_chat.py",
+      "language": "python",
+      "sizeLines": 255,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/graphs/source.py",
+      "language": "python",
+      "sizeLines": 200,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/graphs/tools.py",
+      "language": "python",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/graphs/transformation.py",
+      "language": "python",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/podcasts/__init__.py",
+      "language": "python",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/podcasts/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 103,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "open_notebook/podcasts/migration.py",
+      "language": "python",
+      "sizeLines": 192,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/podcasts/models.py",
+      "language": "python",
+      "sizeLines": 277,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/utils/__init__.py",
+      "language": "python",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/utils/chunking.py",
+      "language": "python",
+      "sizeLines": 494,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/utils/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 229,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "open_notebook/utils/context_builder.py",
+      "language": "python",
+      "sizeLines": 495,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/utils/embedding.py",
+      "language": "python",
+      "sizeLines": 274,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/utils/encryption.py",
+      "language": "python",
+      "sizeLines": 198,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/utils/error_classifier.py",
+      "language": "python",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/utils/graph_utils.py",
+      "language": "python",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/utils/README.md",
+      "language": "markdown",
+      "sizeLines": 187,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "open_notebook/utils/text_utils.py",
+      "language": "python",
+      "sizeLines": 145,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/utils/token_utils.py",
+      "language": "python",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/utils/version_utils.py",
+      "language": "python",
+      "sizeLines": 153,
+      "fileCategory": "code"
+    },
+    {
+      "path": "prompts/ask/entry.jinja",
+      "language": "jinja",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "prompts/ask/final_answer.jinja",
+      "language": "jinja",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "prompts/ask/query_process.jinja",
+      "language": "jinja",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "prompts/chat/system.jinja",
+      "language": "jinja",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "prompts/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 190,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "prompts/podcast/outline.jinja",
+      "language": "jinja",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "prompts/podcast/transcript.jinja",
+      "language": "jinja",
+      "sizeLines": 134,
+      "fileCategory": "code"
+    },
+    {
+      "path": "prompts/source_chat/system.jinja",
+      "language": "jinja",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "pyproject.toml",
+      "language": "toml",
+      "sizeLines": 103,
+      "fileCategory": "config"
+    },
+    {
+      "path": "README.dev.md",
+      "language": "markdown",
+      "sizeLines": 449,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 363,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "run_api.py",
+      "language": "python",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/export_docs.py",
+      "language": "python",
+      "sizeLines": 108,
+      "fileCategory": "code"
+    },
+    {
+      "path": "scripts/README.md",
+      "language": "markdown",
+      "sizeLines": 75,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "scripts/wait-for-api.sh",
+      "language": "shell",
+      "sizeLines": 25,
+      "fileCategory": "script"
+    },
+    {
+      "path": "SECURITY.md",
+      "language": "markdown",
+      "sizeLines": 65,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "supervisord.conf",
+      "language": "conf",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "supervisord.single.conf",
+      "language": "conf",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/conftest.py",
+      "language": "python",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/README.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "tests/test_chunking.py",
+      "language": "python",
+      "sizeLines": 357,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_credentials_api.py",
+      "language": "python",
+      "sizeLines": 274,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_crud_404.py",
+      "language": "python",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_domain.py",
+      "language": "python",
+      "sizeLines": 730,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_embedding_commands.py",
+      "language": "python",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_embedding.py",
+      "language": "python",
+      "sizeLines": 355,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_graphs.py",
+      "language": "python",
+      "sizeLines": 282,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_models_api.py",
+      "language": "python",
+      "sizeLines": 391,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_notes_api.py",
+      "language": "python",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_podcast_path.py",
+      "language": "python",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_search_api.py",
+      "language": "python",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_sources_api.py",
+      "language": "python",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_url_validation.py",
+      "language": "python",
+      "sizeLines": 130,
+      "fileCategory": "code"
+    },
+    {
+      "path": "tests/test_utils.py",
+      "language": "python",
+      "sizeLines": 284,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 477,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "large",
+  "importMap": {
+    ".dockerignore": [],
+    ".env.example": [],
+    ".gitattributes": [],
+    ".github/ISSUE_TEMPLATE/bug_report.yml": [],
+    ".github/ISSUE_TEMPLATE/config.yml": [],
+    ".github/ISSUE_TEMPLATE/feature_request.yml": [],
+    ".github/ISSUE_TEMPLATE/installation_issue.yml": [],
+    ".github/pull_request_template.md": [],
+    ".github/workflows/build-and-release.yml": [],
+    ".github/workflows/build-dev.yml": [],
+    ".github/workflows/test.yml": [],
+    ".python-version": [],
+    ".understand-anything/.understandignore": [],
+    ".understand-anything/config.json": [],
+    ".worktreeinclude": [],
+    "api/__init__.py": [],
+    "api/auth.py": [
+      "open_notebook/utils/encryption.py"
+    ],
+    "api/chat_service.py": [],
+    "api/CLAUDE.md": [],
+    "api/client.py": [],
+    "api/command_service.py": [],
+    "api/context_service.py": [
+      "api/client.py"
+    ],
+    "api/credentials_service.py": [
+      "api/models.py",
+      "open_notebook/ai/model_discovery.py",
+      "open_notebook/domain/credential.py",
+      "open_notebook/utils/encryption.py"
+    ],
+    "api/embedding_service.py": [
+      "api/client.py"
+    ],
+    "api/episode_profiles_service.py": [
+      "api/client.py",
+      "open_notebook/podcasts/models.py"
+    ],
+    "api/insights_service.py": [
+      "api/client.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "api/main.py": [
+      "api/auth.py",
+      "api/routers/__init__.py",
+      "api/routers/auth.py",
+      "api/routers/chat.py",
+      "api/routers/config.py",
+      "api/routers/context.py",
+      "api/routers/credentials.py",
+      "api/routers/embedding_rebuild.py",
+      "api/routers/embedding.py",
+      "api/routers/episode_profiles.py",
+      "api/routers/insights.py",
+      "api/routers/languages.py",
+      "api/routers/models.py",
+      "api/routers/notebooks.py",
+      "api/routers/notes.py",
+      "api/routers/podcasts.py",
+      "api/routers/search.py",
+      "api/routers/settings.py",
+      "api/routers/source_chat.py",
+      "api/routers/sources.py",
+      "api/routers/speaker_profiles.py",
+      "api/routers/transformations.py",
+      "open_notebook/database/async_migrate.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/encryption.py"
+    ],
+    "api/models_service.py": [
+      "api/client.py",
+      "open_notebook/ai/models.py"
+    ],
+    "api/models.py": [],
+    "api/notebook_service.py": [
+      "api/client.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "api/notes_service.py": [
+      "api/client.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "api/podcast_api_service.py": [
+      "api/client.py"
+    ],
+    "api/podcast_service.py": [
+      "open_notebook/domain/notebook.py",
+      "open_notebook/podcasts/models.py"
+    ],
+    "api/routers/__init__.py": [],
+    "api/routers/auth.py": [
+      "open_notebook/utils/encryption.py"
+    ],
+    "api/routers/chat.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/graphs/chat.py",
+      "open_notebook/utils/graph_utils.py"
+    ],
+    "api/routers/commands.py": [
+      "api/command_service.py"
+    ],
+    "api/routers/config.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/utils/version_utils.py"
+    ],
+    "api/routers/context.py": [
+      "api/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/__init__.py"
+    ],
+    "api/routers/credentials.py": [
+      "api/credentials_service.py",
+      "api/models.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/credential.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/embedding_rebuild.py": [
+      "api/command_service.py",
+      "api/models.py",
+      "open_notebook/database/repository.py"
+    ],
+    "api/routers/embedding.py": [
+      "api/command_service.py",
+      "api/models.py",
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/episode_profiles.py": [
+      "open_notebook/podcasts/models.py"
+    ],
+    "api/routers/insights.py": [
+      "api/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/languages.py": [],
+    "api/routers/models.py": [
+      "api/models.py",
+      "open_notebook/ai/connection_tester.py",
+      "open_notebook/ai/key_provider.py",
+      "open_notebook/ai/model_discovery.py",
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/credential.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/notebooks.py": [
+      "api/models.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/notes.py": [
+      "api/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/podcasts.py": [
+      "api/podcast_service.py"
+    ],
+    "api/routers/search.py": [
+      "api/models.py",
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/graphs/ask.py"
+    ],
+    "api/routers/settings.py": [
+      "api/models.py",
+      "open_notebook/domain/content_settings.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/source_chat.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/graphs/source_chat.py",
+      "open_notebook/utils/graph_utils.py"
+    ],
+    "api/routers/sources.py": [
+      "api/command_service.py",
+      "api/models.py",
+      "commands/source_commands.py",
+      "open_notebook/config.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/speaker_profiles.py": [
+      "open_notebook/podcasts/models.py"
+    ],
+    "api/routers/transformations.py": [
+      "api/models.py",
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/graphs/transformation.py"
+    ],
+    "api/search_service.py": [
+      "api/client.py"
+    ],
+    "api/settings_service.py": [
+      "api/client.py",
+      "open_notebook/domain/content_settings.py"
+    ],
+    "api/sources_service.py": [
+      "api/client.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "api/transformations_service.py": [
+      "api/client.py",
+      "open_notebook/domain/transformation.py"
+    ],
+    "CHANGELOG.md": [],
+    "CLAUDE.md": [],
+    "CODE_OF_CONDUCT.md": [],
+    "commands/__init__.py": [
+      "commands/embedding_commands.py",
+      "commands/example_commands.py",
+      "commands/podcast_commands.py",
+      "commands/source_commands.py"
+    ],
+    "commands/CLAUDE.md": [],
+    "commands/embedding_commands.py": [
+      "open_notebook/ai/models.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/chunking.py",
+      "open_notebook/utils/embedding.py"
+    ],
+    "commands/example_commands.py": [],
+    "commands/podcast_commands.py": [
+      "open_notebook/config.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/podcasts/models.py"
+    ],
+    "commands/source_commands.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/exceptions.py"
+    ],
+    "CONFIGURATION.md": [],
+    "CONTRIBUTING.md": [],
+    "dev-init.sh": [],
+    "docker-compose.yml": [],
+    "Dockerfile": [],
+    "Dockerfile.single": [],
+    "docs/0-START-HERE/index.md": [],
+    "docs/0-START-HERE/quick-start-cloud.md": [],
+    "docs/0-START-HERE/quick-start-external-ollama.md": [],
+    "docs/0-START-HERE/quick-start-local.md": [],
+    "docs/0-START-HERE/quick-start-openai.md": [],
+    "docs/1-INSTALLATION/docker-compose.md": [],
+    "docs/1-INSTALLATION/from-source.md": [],
+    "docs/1-INSTALLATION/index.md": [],
+    "docs/1-INSTALLATION/single-container.md": [],
+    "docs/1-INSTALLATION/windows-native.md": [],
+    "docs/2-CORE-CONCEPTS/ai-context-rag.md": [],
+    "docs/2-CORE-CONCEPTS/chat-vs-transformations.md": [],
+    "docs/2-CORE-CONCEPTS/index.md": [],
+    "docs/2-CORE-CONCEPTS/notebooks-sources-notes.md": [],
+    "docs/2-CORE-CONCEPTS/podcasts-explained.md": [],
+    "docs/3-USER-GUIDE/adding-sources.md": [],
+    "docs/3-USER-GUIDE/api-configuration.md": [],
+    "docs/3-USER-GUIDE/chat-effectively.md": [],
+    "docs/3-USER-GUIDE/citations.md": [],
+    "docs/3-USER-GUIDE/creating-podcasts.md": [],
+    "docs/3-USER-GUIDE/index.md": [],
+    "docs/3-USER-GUIDE/interface-overview.md": [],
+    "docs/3-USER-GUIDE/search.md": [],
+    "docs/3-USER-GUIDE/transformations.md": [],
+    "docs/3-USER-GUIDE/working-with-notes.md": [],
+    "docs/4-AI-PROVIDERS/index.md": [],
+    "docs/5-CONFIGURATION/advanced.md": [],
+    "docs/5-CONFIGURATION/ai-providers.md": [],
+    "docs/5-CONFIGURATION/database.md": [],
+    "docs/5-CONFIGURATION/environment-reference.md": [],
+    "docs/5-CONFIGURATION/index.md": [],
+    "docs/5-CONFIGURATION/local-stt.md": [],
+    "docs/5-CONFIGURATION/local-tts.md": [],
+    "docs/5-CONFIGURATION/mcp-integration.md": [],
+    "docs/5-CONFIGURATION/ollama.md": [],
+    "docs/5-CONFIGURATION/openai-compatible.md": [],
+    "docs/5-CONFIGURATION/reverse-proxy.md": [],
+    "docs/5-CONFIGURATION/security.md": [],
+    "docs/6-TROUBLESHOOTING/ai-chat-issues.md": [],
+    "docs/6-TROUBLESHOOTING/connection-issues.md": [],
+    "docs/6-TROUBLESHOOTING/faq.md": [],
+    "docs/6-TROUBLESHOOTING/index.md": [],
+    "docs/6-TROUBLESHOOTING/quick-fixes.md": [],
+    "docs/7-DEVELOPMENT/api-reference.md": [],
+    "docs/7-DEVELOPMENT/architecture.md": [],
+    "docs/7-DEVELOPMENT/change-playbooks.md": [],
+    "docs/7-DEVELOPMENT/code-standards.md": [],
+    "docs/7-DEVELOPMENT/contributing.md": [],
+    "docs/7-DEVELOPMENT/design-principles.md": [],
+    "docs/7-DEVELOPMENT/development-setup.md": [],
+    "docs/7-DEVELOPMENT/index.md": [],
+    "docs/7-DEVELOPMENT/maintainer-guide.md": [],
+    "docs/7-DEVELOPMENT/quick-start.md": [],
+    "docs/7-DEVELOPMENT/security.md": [],
+    "docs/7-DEVELOPMENT/testing.md": [],
+    "docs/index.md": [],
+    "docs/SECURITY_REVIEW.md": [],
+    "examples/docker-compose-dev.yml": [],
+    "examples/docker-compose-full-local.yml": [],
+    "examples/docker-compose-ollama.yml": [],
+    "examples/docker-compose-single.yml": [],
+    "examples/docker-compose-speaches.yml": [],
+    "examples/easypanel/index.ts": [],
+    "examples/easypanel/meta.yaml": [],
+    "examples/easypanel/README.md": [],
+    "examples/README.md": [],
+    "frontend/components.json": [],
+    "frontend/eslint.config.mjs": [],
+    "frontend/next.config.ts": [],
+    "frontend/package.json": [],
+    "frontend/postcss.config.mjs": [],
+    "frontend/src/app/(auth)/login/page.tsx": [
+      "frontend/src/components/auth/LoginForm.tsx",
+      "frontend/src/components/common/ErrorBoundary.tsx"
+    ],
+    "frontend/src/app/(dashboard)/advanced/components/RebuildEmbeddings.tsx": [
+      "frontend/src/components/ui/accordion.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/progress.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/api/embedding.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/advanced/components/SystemInfo.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/lib/config.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/advanced/page.tsx": [
+      "frontend/src/app/(dashboard)/advanced/components/RebuildEmbeddings.tsx",
+      "frontend/src/app/(dashboard)/advanced/components/SystemInfo.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/layout.tsx": [
+      "frontend/src/components/common/CommandPalette.tsx",
+      "frontend/src/components/common/ErrorBoundary.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/providers/ModalProvider.tsx",
+      "frontend/src/lib/hooks/use-auth.ts",
+      "frontend/src/lib/hooks/use-create-dialogs.tsx",
+      "frontend/src/lib/hooks/use-version-check.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/ChatColumn.tsx",
+      "frontend/src/app/(dashboard)/notebooks/components/NotebookHeader.tsx",
+      "frontend/src/app/(dashboard)/notebooks/components/NotesColumn.tsx",
+      "frontend/src/app/(dashboard)/notebooks/components/SourcesColumn.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/lib/hooks/use-media-query.ts",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/use-sources.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/notebook-columns-store.ts",
+      "frontend/src/lib/types/notebook-context.ts",
+      "frontend/src/lib/utils.ts",
+      "frontend/src/lib/utils/source-context.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/ChatColumn.test.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/ChatColumn.tsx",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/useNotebookChat.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/ChatColumn.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/source/ChatPanel.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/hooks/useNotebookChat.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/NotebookCard.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/NotebookDeleteDialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/NotebookDeleteDialog.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/radio-group.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/NotebookHeader.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/NotebookDeleteDialog.tsx",
+      "frontend/src/components/common/InlineEdit.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/NotebookList.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/NotebookCard.tsx",
+      "frontend/src/app/(dashboard)/notebooks/components/NotebookRow.tsx",
+      "frontend/src/components/common/EmptyState.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/notebook-view-store.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/NotebookRow.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/NotebookDeleteDialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/NoteEditorDialog.tsx": [
+      "frontend/src/components/common/InlineEdit.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/markdown-editor.tsx",
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/NotesColumn.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx",
+      "frontend/src/app/(dashboard)/notebooks/components/NoteEditorDialog.tsx",
+      "frontend/src/components/common/ConfirmDialog.tsx",
+      "frontend/src/components/common/ContextToggle.tsx",
+      "frontend/src/components/common/EmptyState.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/notebooks/CollapsibleColumn.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/notebook-columns-store.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/date-locale.ts",
+      "frontend/src/lib/utils/source-context.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/SourcesColumn.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx",
+      "frontend/src/components/common/ConfirmDialog.tsx",
+      "frontend/src/components/common/EmptyState.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/notebooks/CollapsibleColumn.tsx",
+      "frontend/src/components/sources/AddExistingSourceDialog.tsx",
+      "frontend/src/components/sources/AddSourceDialog.tsx",
+      "frontend/src/components/sources/SourceCard.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-modal-manager.ts",
+      "frontend/src/lib/hooks/use-sources.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/notebook-columns-store.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/source-context.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/page.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/NotebookList.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/notebooks/CreateNotebookDialog.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/notebook-view-store.ts"
+    ],
+    "frontend/src/app/(dashboard)/page.tsx": [],
+    "frontend/src/app/(dashboard)/podcasts/page.tsx": [
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/podcasts/EpisodesTab.tsx",
+      "frontend/src/components/podcasts/TemplatesTab.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/app/(dashboard)/search/page.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/search/AdvancedModelsDialog.tsx",
+      "frontend/src/components/search/SaveToNotebooksDialog.tsx",
+      "frontend/src/components/search/StreamingResponse.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/radio-group.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-ask.ts",
+      "frontend/src/lib/hooks/use-modal-manager.ts",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-search.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/settings/api-keys/page.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/settings/EmbeddingModelChangeDialog.tsx",
+      "frontend/src/components/settings/index.ts",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/api/credentials.ts",
+      "frontend/src/lib/hooks/use-credentials.ts",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/models.ts"
+    ],
+    "frontend/src/app/(dashboard)/settings/components/SettingsForm.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/hooks/use-settings.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/settings/page.tsx": [
+      "frontend/src/app/(dashboard)/settings/components/SettingsForm.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-settings.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/sources/[id]/page.tsx": [
+      "frontend/src/components/source/ChatPanel.tsx",
+      "frontend/src/components/source/SourceDetailContent.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-navigation.ts",
+      "frontend/src/lib/hooks/useSourceChat.ts"
+    ],
+    "frontend/src/app/(dashboard)/sources/page.tsx": [
+      "frontend/src/components/common/ConfirmDialog.tsx",
+      "frontend/src/components/common/EmptyState.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/api/sources.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils.ts",
+      "frontend/src/lib/utils/date-locale.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/DefaultPromptEditor.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/TransformationCard.tsx": [
+      "frontend/src/components/common/ConfirmDialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/TransformationEditorDialog.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/markdown-editor.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/TransformationPlayground.tsx": [
+      "frontend/src/components/common/ModelSelector.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/TransformationsList.tsx": [
+      "frontend/src/app/(dashboard)/transformations/components/TransformationCard.tsx",
+      "frontend/src/app/(dashboard)/transformations/components/TransformationEditorDialog.tsx",
+      "frontend/src/components/common/EmptyState.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/page.tsx": [
+      "frontend/src/app/(dashboard)/transformations/components/DefaultPromptEditor.tsx",
+      "frontend/src/app/(dashboard)/transformations/components/TransformationPlayground.tsx",
+      "frontend/src/app/(dashboard)/transformations/components/TransformationsList.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/app/api/_sse-proxy.ts": [],
+    "frontend/src/app/api/search/ask/route.ts": [
+      "frontend/src/app/api/_sse-proxy.ts"
+    ],
+    "frontend/src/app/api/sources/[sourceId]/chat/sessions/[sessionId]/messages/route.ts": [
+      "frontend/src/app/api/_sse-proxy.ts"
+    ],
+    "frontend/src/app/config/route.ts": [],
+    "frontend/src/app/globals.css": [],
+    "frontend/src/app/layout.tsx": [
+      "frontend/src/app/globals.css",
+      "frontend/src/components/common/ConnectionGuard.tsx",
+      "frontend/src/components/common/ErrorBoundary.tsx",
+      "frontend/src/components/providers/I18nProvider.tsx",
+      "frontend/src/components/providers/QueryProvider.tsx",
+      "frontend/src/components/providers/ThemeProvider.tsx",
+      "frontend/src/components/ui/sonner.tsx",
+      "frontend/src/lib/theme-script.ts"
+    ],
+    "frontend/src/app/page.tsx": [],
+    "frontend/src/CLAUDE.md": [],
+    "frontend/src/components/auth/LoginForm.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/lib/config.ts",
+      "frontend/src/lib/hooks/use-auth.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/auth-store.ts"
+    ],
+    "frontend/src/components/common/CommandPalette.tsx": [
+      "frontend/src/components/ui/command.tsx",
+      "frontend/src/lib/hooks/use-create-dialogs.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/theme-store.ts"
+    ],
+    "frontend/src/components/common/ConfirmDialog.test.tsx": [
+      "frontend/src/components/common/ConfirmDialog.tsx"
+    ],
+    "frontend/src/components/common/ConfirmDialog.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/common/ConnectionGuard.tsx": [
+      "frontend/src/components/errors/ConnectionErrorOverlay.tsx",
+      "frontend/src/lib/config.ts",
+      "frontend/src/lib/types/config.ts"
+    ],
+    "frontend/src/components/common/ContextIndicator.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/tooltip.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/common/ContextToggle.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/tooltip.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/common/EmptyState.tsx": [],
+    "frontend/src/components/common/ErrorBoundary.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/lib/locales/en-US/index.ts"
+    ],
+    "frontend/src/components/common/InlineEdit.tsx": [
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/common/LanguageLoadingOverlay.tsx": [
+      "frontend/src/lib/i18n-events.ts"
+    ],
+    "frontend/src/components/common/LanguageToggle.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/common/LoadingSpinner.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/common/ModelSelector.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/common/ThemeToggle.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/theme-store.ts"
+    ],
+    "frontend/src/components/errors/ConnectionErrorOverlay.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/config.ts"
+    ],
+    "frontend/src/components/layout/AppShell.tsx": [
+      "frontend/src/components/layout/AppSidebar.tsx",
+      "frontend/src/components/layout/SetupBanner.tsx"
+    ],
+    "frontend/src/components/layout/AppSidebar.test.tsx": [
+      "frontend/src/components/layout/AppSidebar.tsx",
+      "frontend/src/lib/stores/sidebar-store.ts"
+    ],
+    "frontend/src/components/layout/AppSidebar.tsx": [
+      "frontend/src/components/common/LanguageToggle.tsx",
+      "frontend/src/components/common/ThemeToggle.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/components/ui/tooltip.tsx",
+      "frontend/src/lib/hooks/use-auth.ts",
+      "frontend/src/lib/hooks/use-create-dialogs.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/sidebar-store.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/layout/SetupBanner.tsx": [
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-credentials.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/notebooks/CollapsibleColumn.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/tooltip.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/notebooks/CreateNotebookDialog.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/podcasts/EpisodeCard.tsx": [
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/lib/api/podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts",
+      "frontend/src/lib/utils.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/components/podcasts/EpisodeProfilesPanel.tsx": [
+      "frontend/src/components/podcasts/forms/EpisodeProfileFormDialog.tsx",
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/podcasts/EpisodesTab.tsx": [
+      "frontend/src/components/podcasts/EpisodeCard.tsx",
+      "frontend/src/components/podcasts/GeneratePodcastDialog.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/podcasts/forms/EpisodeProfileFormDialog.tsx": [
+      "frontend/src/components/common/ModelSelector.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/podcasts/forms/SpeakerProfileFormDialog.tsx": [
+      "frontend/src/components/common/ModelSelector.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/podcasts/GeneratePodcastDialog.tsx": [
+      "frontend/src/components/ui/accordion.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/api/chat.ts",
+      "frontend/src/lib/api/notes.ts",
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/api/sources.ts",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/podcasts/SpeakerProfilesPanel.tsx": [
+      "frontend/src/components/podcasts/forms/SpeakerProfileFormDialog.tsx",
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/podcasts/TemplatesTab.tsx": [
+      "frontend/src/components/podcasts/EpisodeProfilesPanel.tsx",
+      "frontend/src/components/podcasts/SpeakerProfilesPanel.tsx",
+      "frontend/src/components/ui/accordion.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/providers/I18nProvider.tsx": [
+      "frontend/src/components/common/LanguageLoadingOverlay.tsx",
+      "frontend/src/lib/i18n.ts"
+    ],
+    "frontend/src/components/providers/ModalProvider.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/NoteEditorDialog.tsx",
+      "frontend/src/components/source/SourceDialog.tsx",
+      "frontend/src/components/source/SourceInsightDialog.tsx",
+      "frontend/src/lib/hooks/use-modal-manager.ts"
+    ],
+    "frontend/src/components/providers/QueryProvider.tsx": [
+      "frontend/src/lib/api/query-client.ts"
+    ],
+    "frontend/src/components/providers/ThemeProvider.tsx": [
+      "frontend/src/lib/stores/theme-store.ts"
+    ],
+    "frontend/src/components/search/AdvancedModelsDialog.tsx": [
+      "frontend/src/components/common/ModelSelector.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/search/SaveToNotebooksDialog.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/checkbox-list.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/search/StreamingResponse.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/lib/hooks/use-modal-manager.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/utils/source-references.tsx"
+    ],
+    "frontend/src/components/settings/EmbeddingModelChangeDialog.tsx": [
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/settings/index.ts": [],
+    "frontend/src/components/settings/MigrationBanner.tsx": [
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-credentials.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/settings/ModelTestResultDialog.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/models.ts"
+    ],
+    "frontend/src/components/source/ChatPanel.tsx": [
+      "frontend/src/components/common/ContextIndicator.tsx",
+      "frontend/src/components/source/MessageActions.tsx",
+      "frontend/src/components/source/ModelSelector.tsx",
+      "frontend/src/components/source/SessionManager.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-modal-manager.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/source-references.tsx"
+    ],
+    "frontend/src/components/source/MessageActions.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/tooltip.tsx",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/source/ModelSelector.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/source/NotebookAssociations.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-sources.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/source/SessionManager.tsx": [
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/components/source/SourceDetailContent.tsx": [
+      "frontend/src/components/common/InlineEdit.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/source/NotebookAssociations.tsx",
+      "frontend/src/components/source/SourceInsightDialog.tsx",
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/lib/api/embedding.ts",
+      "frontend/src/lib/api/insights.ts",
+      "frontend/src/lib/api/sources.ts",
+      "frontend/src/lib/api/transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/types/transformations.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/components/source/SourceDialog.tsx": [
+      "frontend/src/components/source/SourceDetailContent.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/source/SourceInsightDialog.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/hooks/use-insights.ts",
+      "frontend/src/lib/hooks/use-modal-manager.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/sources/AddExistingSourceDialog.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/lib/api/search.ts",
+      "frontend/src/lib/api/sources.ts",
+      "frontend/src/lib/hooks/use-sources.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/components/sources/AddSourceButton.tsx": [
+      "frontend/src/components/sources/AddSourceDialog.tsx",
+      "frontend/src/components/ui/button.tsx"
+    ],
+    "frontend/src/components/sources/AddSourceDialog.tsx": [
+      "frontend/src/components/sources/steps/NotebooksStep.tsx",
+      "frontend/src/components/sources/steps/ProcessingStep.tsx",
+      "frontend/src/components/sources/steps/SourceTypeStep.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/wizard-container.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-settings.ts",
+      "frontend/src/lib/hooks/use-sources.ts",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/components/sources/index.ts": [],
+    "frontend/src/components/sources/README.md": [],
+    "frontend/src/components/sources/SourceCard.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx",
+      "frontend/src/components/common/ContextToggle.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-sources.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/sources/steps/NotebooksStep.tsx": [
+      "frontend/src/components/ui/checkbox-list.tsx",
+      "frontend/src/components/ui/form-section.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/components/sources/steps/ProcessingStep.tsx": [
+      "frontend/src/components/ui/checkbox-list.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/form-section.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/components/sources/steps/SourceTypeStep.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/form-section.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/ui/accordion.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/alert-dialog.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/alert.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/badge.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/button.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/card.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/checkbox-list.tsx": [
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/checkbox.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/CLAUDE.md": [],
+    "frontend/src/components/ui/collapsible.tsx": [],
+    "frontend/src/components/ui/command.tsx": [
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/dialog.tsx": [
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/dropdown-menu.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/form-section.tsx": [
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/input.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/label.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/markdown-editor.tsx": [],
+    "frontend/src/components/ui/popover.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/progress.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/radio-group.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/scroll-area.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/select.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/separator.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/sonner.tsx": [
+      "frontend/src/lib/stores/theme-store.ts"
+    ],
+    "frontend/src/components/ui/tabs.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/textarea.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/tooltip.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/wizard-container.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/lib/api/chat.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/lib/api/CLAUDE.md": [],
+    "frontend/src/lib/api/client.ts": [
+      "frontend/src/lib/config.ts"
+    ],
+    "frontend/src/lib/api/credentials.ts": [
+      "frontend/src/lib/api/client.ts"
+    ],
+    "frontend/src/lib/api/embedding.ts": [
+      "frontend/src/lib/api/client.ts"
+    ],
+    "frontend/src/lib/api/insights.ts": [
+      "frontend/src/lib/api/client.ts"
+    ],
+    "frontend/src/lib/api/models.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/models.ts"
+    ],
+    "frontend/src/lib/api/notebooks.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/lib/api/notes.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/lib/api/podcasts.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/config.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/lib/api/query-client.ts": [],
+    "frontend/src/lib/api/search.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/search.ts"
+    ],
+    "frontend/src/lib/api/settings.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/lib/api/source-chat.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/lib/api/sources.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/lib/api/transformations.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/lib/config.test.ts": [
+      "frontend/src/lib/config.ts"
+    ],
+    "frontend/src/lib/config.ts": [
+      "frontend/src/lib/types/config.ts"
+    ],
+    "frontend/src/lib/hooks/CLAUDE.md": [],
+    "frontend/src/lib/hooks/use-ask.ts": [
+      "frontend/src/lib/api/search.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/search.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-auth.ts": [
+      "frontend/src/lib/stores/auth-store.ts"
+    ],
+    "frontend/src/lib/hooks/use-create-dialogs.tsx": [
+      "frontend/src/components/notebooks/CreateNotebookDialog.tsx",
+      "frontend/src/components/podcasts/GeneratePodcastDialog.tsx",
+      "frontend/src/components/sources/AddSourceDialog.tsx"
+    ],
+    "frontend/src/lib/hooks/use-credentials.ts": [
+      "frontend/src/lib/api/credentials.ts",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-insights.ts": [
+      "frontend/src/lib/api/insights.ts"
+    ],
+    "frontend/src/lib/hooks/use-media-query.ts": [],
+    "frontend/src/lib/hooks/use-modal-manager.test.ts": [
+      "frontend/src/lib/hooks/use-modal-manager.ts"
+    ],
+    "frontend/src/lib/hooks/use-modal-manager.ts": [],
+    "frontend/src/lib/hooks/use-models.ts": [
+      "frontend/src/lib/api/models.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/models.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-navigation.ts": [
+      "frontend/src/lib/stores/navigation-store.ts"
+    ],
+    "frontend/src/lib/hooks/use-notebooks.ts": [
+      "frontend/src/lib/api/notebooks.ts",
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-notes.ts": [
+      "frontend/src/lib/api/notes.ts",
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-podcasts.ts": [
+      "frontend/src/lib/api/podcasts.ts",
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-search.ts": [
+      "frontend/src/lib/api/search.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/search.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-settings.ts": [
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/api/settings.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-sources.ts": [
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/api/sources.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-toast.ts": [
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/lib/hooks/use-transformations.ts": [
+      "frontend/src/lib/api/transformations.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-translation.test.ts": [
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/lib/hooks/use-translation.ts": [
+      "frontend/src/lib/i18n-events.ts"
+    ],
+    "frontend/src/lib/hooks/use-version-check.ts": [
+      "frontend/src/lib/config.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/lib/hooks/useNotebookChat.ts": [
+      "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx",
+      "frontend/src/lib/api/chat.ts",
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/useSourceChat.ts": [
+      "frontend/src/lib/api/source-chat.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/i18n-events.ts": [],
+    "frontend/src/lib/i18n.ts": [
+      "frontend/src/lib/locales/index.ts"
+    ],
+    "frontend/src/lib/locales/bn-IN/index.ts": [],
+    "frontend/src/lib/locales/ca-ES/index.ts": [],
+    "frontend/src/lib/locales/CLAUDE.md": [],
+    "frontend/src/lib/locales/de-DE/index.ts": [],
+    "frontend/src/lib/locales/en-US/index.ts": [],
+    "frontend/src/lib/locales/es-ES/index.ts": [],
+    "frontend/src/lib/locales/fr-FR/index.ts": [],
+    "frontend/src/lib/locales/index.test.ts": [
+      "frontend/src/lib/locales/en-US/index.ts",
+      "frontend/src/lib/locales/index.ts"
+    ],
+    "frontend/src/lib/locales/index.ts": [
+      "frontend/src/lib/locales/bn-IN/index.ts",
+      "frontend/src/lib/locales/ca-ES/index.ts",
+      "frontend/src/lib/locales/de-DE/index.ts",
+      "frontend/src/lib/locales/en-US/index.ts",
+      "frontend/src/lib/locales/es-ES/index.ts",
+      "frontend/src/lib/locales/fr-FR/index.ts",
+      "frontend/src/lib/locales/it-IT/index.ts",
+      "frontend/src/lib/locales/ja-JP/index.ts",
+      "frontend/src/lib/locales/pl-PL/index.ts",
+      "frontend/src/lib/locales/pt-BR/index.ts",
+      "frontend/src/lib/locales/ru-RU/index.ts",
+      "frontend/src/lib/locales/tr-TR/index.ts",
+      "frontend/src/lib/locales/zh-CN/index.ts",
+      "frontend/src/lib/locales/zh-TW/index.ts"
+    ],
+    "frontend/src/lib/locales/it-IT/index.ts": [],
+    "frontend/src/lib/locales/ja-JP/index.ts": [],
+    "frontend/src/lib/locales/pl-PL/index.ts": [],
+    "frontend/src/lib/locales/pt-BR/index.ts": [],
+    "frontend/src/lib/locales/ru-RU/index.ts": [],
+    "frontend/src/lib/locales/tr-TR/index.ts": [],
+    "frontend/src/lib/locales/zh-CN/index.ts": [],
+    "frontend/src/lib/locales/zh-TW/index.ts": [],
+    "frontend/src/lib/stores/auth-store.ts": [
+      "frontend/src/lib/config.ts"
+    ],
+    "frontend/src/lib/stores/CLAUDE.md": [],
+    "frontend/src/lib/stores/navigation-store.ts": [],
+    "frontend/src/lib/stores/notebook-columns-store.ts": [],
+    "frontend/src/lib/stores/notebook-view-store.ts": [],
+    "frontend/src/lib/stores/sidebar-store.ts": [],
+    "frontend/src/lib/stores/theme-store.ts": [],
+    "frontend/src/lib/theme-script.ts": [],
+    "frontend/src/lib/types/api.ts": [],
+    "frontend/src/lib/types/auth.ts": [],
+    "frontend/src/lib/types/common.ts": [],
+    "frontend/src/lib/types/config.ts": [],
+    "frontend/src/lib/types/models.ts": [],
+    "frontend/src/lib/types/notebook-context.ts": [],
+    "frontend/src/lib/types/podcasts.ts": [],
+    "frontend/src/lib/types/search.ts": [],
+    "frontend/src/lib/types/transformations.ts": [],
+    "frontend/src/lib/utils.ts": [],
+    "frontend/src/lib/utils/date-locale.ts": [],
+    "frontend/src/lib/utils/error-handler.ts": [],
+    "frontend/src/lib/utils/source-context.test.ts": [
+      "frontend/src/lib/utils/source-context.ts"
+    ],
+    "frontend/src/lib/utils/source-context.ts": [
+      "frontend/src/lib/types/notebook-context.ts"
+    ],
+    "frontend/src/lib/utils/source-references.tsx": [],
+    "frontend/src/proxy.ts": [],
+    "frontend/src/test/jest-dom.d.ts": [],
+    "frontend/src/test/setup.ts": [],
+    "frontend/start-server.js": [],
+    "frontend/tailwind.config.ts": [],
+    "frontend/test-results/.last-run.json": [],
+    "frontend/tsconfig.json": [],
+    "frontend/vitest.config.ts": [],
+    "history.txt": [],
+    "MAINTAINER_GUIDE.md": [],
+    "Makefile": [],
+    "mypy.ini": [],
+    "open_notebook/__init__.py": [],
+    "open_notebook/ai/__init__.py": [],
+    "open_notebook/ai/CLAUDE.md": [],
+    "open_notebook/ai/connection_tester.py": [],
+    "open_notebook/ai/key_provider.py": [
+      "open_notebook/domain/credential.py"
+    ],
+    "open_notebook/ai/model_discovery.py": [
+      "open_notebook/ai/models.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/credential.py"
+    ],
+    "open_notebook/ai/models.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/exceptions.py"
+    ],
+    "open_notebook/ai/provision.py": [
+      "open_notebook/ai/models.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/__init__.py"
+    ],
+    "open_notebook/CLAUDE.md": [],
+    "open_notebook/config.py": [],
+    "open_notebook/database/async_migrate.py": [
+      "open_notebook/database/repository.py"
+    ],
+    "open_notebook/database/CLAUDE.md": [],
+    "open_notebook/database/migrate.py": [
+      "open_notebook/database/async_migrate.py"
+    ],
+    "open_notebook/database/migrations/1_down.surrealql": [],
+    "open_notebook/database/migrations/1.surrealql": [],
+    "open_notebook/database/migrations/10_down.surrealql": [],
+    "open_notebook/database/migrations/10.surrealql": [],
+    "open_notebook/database/migrations/11_down.surrealql": [],
+    "open_notebook/database/migrations/11.surrealql": [],
+    "open_notebook/database/migrations/12_down.surrealql": [],
+    "open_notebook/database/migrations/12.surrealql": [],
+    "open_notebook/database/migrations/13_down.surrealql": [],
+    "open_notebook/database/migrations/13.surrealql": [],
+    "open_notebook/database/migrations/14_down.surrealql": [],
+    "open_notebook/database/migrations/14.surrealql": [],
+    "open_notebook/database/migrations/15_down.surrealql": [],
+    "open_notebook/database/migrations/15.surrealql": [],
+    "open_notebook/database/migrations/2_down.surrealql": [],
+    "open_notebook/database/migrations/2.surrealql": [],
+    "open_notebook/database/migrations/3_down.surrealql": [],
+    "open_notebook/database/migrations/3.surrealql": [],
+    "open_notebook/database/migrations/4_down.surrealql": [],
+    "open_notebook/database/migrations/4.surrealql": [],
+    "open_notebook/database/migrations/5_down.surrealql": [],
+    "open_notebook/database/migrations/5.surrealql": [],
+    "open_notebook/database/migrations/6_down.surrealql": [],
+    "open_notebook/database/migrations/6.surrealql": [],
+    "open_notebook/database/migrations/7_down.surrealql": [],
+    "open_notebook/database/migrations/7.surrealql": [],
+    "open_notebook/database/migrations/8_down.surrealql": [],
+    "open_notebook/database/migrations/8.surrealql": [],
+    "open_notebook/database/migrations/9_down.surrealql": [],
+    "open_notebook/database/migrations/9.surrealql": [],
+    "open_notebook/database/repository.py": [],
+    "open_notebook/domain/__init__.py": [],
+    "open_notebook/domain/base.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/exceptions.py"
+    ],
+    "open_notebook/domain/CLAUDE.md": [],
+    "open_notebook/domain/content_settings.py": [
+      "open_notebook/domain/base.py"
+    ],
+    "open_notebook/domain/credential.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/utils/encryption.py"
+    ],
+    "open_notebook/domain/notebook.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/exceptions.py"
+    ],
+    "open_notebook/domain/provider_config.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/utils/encryption.py"
+    ],
+    "open_notebook/domain/transformation.py": [
+      "open_notebook/domain/base.py"
+    ],
+    "open_notebook/exceptions.py": [],
+    "open_notebook/graphs/ask.py": [
+      "open_notebook/ai/provision.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/__init__.py",
+      "open_notebook/utils/error_classifier.py",
+      "open_notebook/utils/text_utils.py"
+    ],
+    "open_notebook/graphs/chat.py": [
+      "open_notebook/ai/provision.py",
+      "open_notebook/config.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/__init__.py",
+      "open_notebook/utils/error_classifier.py",
+      "open_notebook/utils/text_utils.py"
+    ],
+    "open_notebook/graphs/CLAUDE.md": [],
+    "open_notebook/graphs/prompt.py": [
+      "open_notebook/ai/provision.py",
+      "open_notebook/utils/text_utils.py"
+    ],
+    "open_notebook/graphs/source_chat.py": [
+      "open_notebook/ai/provision.py",
+      "open_notebook/config.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/__init__.py",
+      "open_notebook/utils/context_builder.py",
+      "open_notebook/utils/error_classifier.py",
+      "open_notebook/utils/text_utils.py"
+    ],
+    "open_notebook/graphs/source.py": [
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/content_settings.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/graphs/transformation.py"
+    ],
+    "open_notebook/graphs/tools.py": [],
+    "open_notebook/graphs/transformation.py": [
+      "open_notebook/ai/provision.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/__init__.py",
+      "open_notebook/utils/error_classifier.py",
+      "open_notebook/utils/text_utils.py"
+    ],
+    "open_notebook/podcasts/__init__.py": [],
+    "open_notebook/podcasts/CLAUDE.md": [],
+    "open_notebook/podcasts/migration.py": [
+      "open_notebook/database/repository.py"
+    ],
+    "open_notebook/podcasts/models.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py"
+    ],
+    "open_notebook/utils/__init__.py": [
+      "open_notebook/utils/chunking.py",
+      "open_notebook/utils/embedding.py",
+      "open_notebook/utils/encryption.py",
+      "open_notebook/utils/text_utils.py",
+      "open_notebook/utils/token_utils.py",
+      "open_notebook/utils/version_utils.py"
+    ],
+    "open_notebook/utils/chunking.py": [
+      "open_notebook/utils/token_utils.py"
+    ],
+    "open_notebook/utils/CLAUDE.md": [],
+    "open_notebook/utils/context_builder.py": [
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/token_utils.py"
+    ],
+    "open_notebook/utils/embedding.py": [
+      "open_notebook/utils/chunking.py",
+      "open_notebook/utils/token_utils.py"
+    ],
+    "open_notebook/utils/encryption.py": [],
+    "open_notebook/utils/error_classifier.py": [
+      "open_notebook/exceptions.py"
+    ],
+    "open_notebook/utils/graph_utils.py": [],
+    "open_notebook/utils/README.md": [],
+    "open_notebook/utils/text_utils.py": [],
+    "open_notebook/utils/token_utils.py": [
+      "open_notebook/config.py"
+    ],
+    "open_notebook/utils/version_utils.py": [],
+    "prompts/ask/entry.jinja": [],
+    "prompts/ask/final_answer.jinja": [],
+    "prompts/ask/query_process.jinja": [],
+    "prompts/chat/system.jinja": [],
+    "prompts/CLAUDE.md": [],
+    "prompts/podcast/outline.jinja": [],
+    "prompts/podcast/transcript.jinja": [],
+    "prompts/source_chat/system.jinja": [],
+    "pyproject.toml": [],
+    "README.dev.md": [],
+    "README.md": [],
+    "run_api.py": [],
+    "scripts/export_docs.py": [],
+    "scripts/README.md": [],
+    "scripts/wait-for-api.sh": [],
+    "SECURITY.md": [],
+    "supervisord.conf": [],
+    "supervisord.single.conf": [],
+    "tests/conftest.py": [],
+    "tests/README.md": [],
+    "tests/test_chunking.py": [
+      "open_notebook/utils/chunking.py",
+      "open_notebook/utils/token_utils.py"
+    ],
+    "tests/test_credentials_api.py": [
+      "api/__init__.py",
+      "api/credentials_service.py"
+    ],
+    "tests/test_crud_404.py": [
+      "open_notebook/exceptions.py"
+    ],
+    "tests/test_domain.py": [
+      "api/podcast_service.py",
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/domain/content_settings.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/podcasts/models.py"
+    ],
+    "tests/test_embedding_commands.py": [
+      "commands/__init__.py",
+      "commands/embedding_commands.py"
+    ],
+    "tests/test_embedding.py": [
+      "open_notebook/utils/chunking.py",
+      "open_notebook/utils/embedding.py",
+      "open_notebook/utils/token_utils.py"
+    ],
+    "tests/test_graphs.py": [
+      "open_notebook/domain/notebook.py",
+      "open_notebook/graphs/prompt.py",
+      "open_notebook/graphs/tools.py",
+      "open_notebook/graphs/transformation.py"
+    ],
+    "tests/test_models_api.py": [],
+    "tests/test_notes_api.py": [],
+    "tests/test_podcast_path.py": [
+      "commands/podcast_commands.py"
+    ],
+    "tests/test_search_api.py": [],
+    "tests/test_sources_api.py": [
+      "open_notebook/config.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "tests/test_url_validation.py": [
+      "api/credentials_service.py"
+    ],
+    "tests/test_utils.py": [
+      "open_notebook/utils/__init__.py",
+      "open_notebook/utils/context_builder.py"
+    ]
+  }
+}

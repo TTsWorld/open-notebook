@@ -1,0 +1,120 @@
+# .understandignore — patterns for files/dirs to exclude from analysis
+# Syntax: same as .gitignore (globs, # comments, ! negation, trailing / for dirs)
+# Lines below are suggestions — uncomment to activate.
+# Use ! prefix to force-include something excluded by defaults.
+#
+# Built-in defaults (always excluded unless negated):
+#   node_modules/, .git/, dist/, build/, obj/, *.lock, *.min.js, etc.
+#
+
+# --- From .gitignore (uncomment to exclude) ---
+
+# .env
+# prompts/patterns/user/
+# /notebooks/
+# data/
+# .uploads/
+# sqlite-db/
+# surreal-data/
+# docker.env
+# notebook_data/
+# *.py[cod]
+# *.so
+# todo.md
+# temp/
+# google-credentials.json
+# .Python
+# develop-eggs/
+# downloads/
+# eggs/
+# .eggs/
+# /lib/
+# /lib64/
+# parts/
+# sdist/
+# var/
+# wheels/
+# share/python-wheels/
+# *.egg-info/
+# .installed.cfg
+# *.egg
+# *.manifest
+# *.spec
+# pip-log.txt
+# pip-delete-this-directory.txt
+# htmlcov/
+# .tox/
+# .nox/
+# .coverage
+# .coverage.*
+# nosetests.xml
+# coverage.xml
+# *.cover
+# *.py,cover
+# .hypothesis/
+# .pytest_cache/
+# .ipynb_checkpoints
+# profile_default/
+# ipython_config.py
+# .env
+# env/
+# ENV/
+# env.bak/
+# venv.bak/
+# .spyderproject
+# .spyproject
+# .ropeproject
+# /site
+# .mypy_cache/
+# .dmypy.json
+# dmypy.json
+# .pyre/
+# .pytype/
+# cython_debug/
+# .DS_Store
+# Thumbs.db
+# ehthumbs.db
+# desktop.ini
+# *~
+# *.db
+# *.sqlite3
+# .quarentena
+# claude-logs/
+# .claude/sessions
+# **/claude-logs
+# docs/custom_gpt
+# doc_exports/
+# specs/
+# .claude
+# .sisyphus
+# .playwright-mcp/
+# *.local.yml
+# **/*.local.md
+# .harness/
+# .mcp.json
+
+# --- Detected directories (uncomment to exclude) ---
+
+# docs/
+# examples/
+# scripts/
+# tests/
+
+# --- Test file patterns (uncomment to exclude) ---
+
+# JS / TS
+# *.test.*
+# *.spec.*
+# *.snap
+# C# / .NET
+# **/*Tests.cs
+# **/*Test.cs
+# **/*Fixture.cs
+# **/*.Tests.csproj
+# Java / Kotlin
+# **/src/test/**
+# **/*Test.java
+# **/*IT.java
+# **/*Spec.kt
+# Go
+# **/*_test.go
